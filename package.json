@@ -183,8 +183,8 @@
     }
   },
   "monorepo": {
-    "productionBranch": "production",
-    "developBranch": "production",
+    "productionBranch": "v7",
+    "developBranch": "v7",
     "npmAccess": "public",
     "ignoreSyncDependencies": [
       "express",
@@ -192,39 +192,11 @@
     ],
     "ghpages": [
       {
-        "dir": "./docs/.vuepress/dist",
-        "url": "https://github.com/tsedio/tsed",
-        "branch": "gh-pages",
-        "cname": "tsed.io",
-        "if": "production"
-      },
-      {
-        "dir": "./docs-references/.vuepress/dist",
-        "url": "https://github.com/tsedio/api-docs.tsed.io.git",
-        "branch": "main",
-        "cname": "api-docs.tsed.io",
-        "if": "production"
-      },
-      {
-        "dir": "./docs/.vuepress/dist",
-        "url": "https://github.com/tsedio/rc.tsed.dev.git",
-        "branch": "gh-pages",
-        "cname": "rc.tsed.dev",
-        "if": "rc"
-      },
-      {
         "dir": "./docs/.vitepress/dist",
-        "url": "https://github.com/tsedio/beta.tsed.dev.git",
-        "branch": "main",
-        "cname": "beta.tsed.dev",
-        "if": "beta"
-      },
-      {
-        "dir": "./docs/.vitepress/dist",
-        "url": "https://github.com/tsedio/alpha.tsed.dev.git",
-        "branch": "main",
-        "cname": "alpha.tsed.dev",
-        "if": "alpha"
+        "url": "https://github.com/tsedio/v7.tsed.git",
+        "branch": "gh-pages",
+        "cname": "v7.tsed.dev",
+        "if": "v7"
       }
     ]
   },

@@ -82,6 +82,8 @@ tools/**/dist
 /docs-references/tutorials
 /docs-references/package.json
 
+/docs/.vitepress
+/docs/public/api.json
 
 # Yarn
 .pnp.*
