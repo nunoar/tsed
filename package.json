@@ -32,7 +32,7 @@
     "test:lint": "eslint '**/*.{ts,js}'",
     "test:lint:fix": "eslint '**/*.{ts,js}' --fix",
     "test:core": "lerna run test:ci --scope '@tsed/{core,di,hooks,engines}' --stream --concurrency 2",
-    "test:platform": "lerna run test:ci --scope '@tsed/platform-*' --stream --concurrency 2",
+    "test:platform": "lerna run test:ci --scope '@tsed/platform-*' --scope '@tsed/common' --stream --concurrency 2",
     "test:orm": "lerna run test:ci --scope '@tsed/{adapters,adapters-redis,mikro-orm,mongoose,objection,prisma}' --stream --concurrency 4",
     "test:graphql": "lerna run test:ci --scope '@tsed/{apollo,typegraphql}' --stream",
     "test:security": "lerna run test:ci --scope '@tsed/{jwks,oidc-provider,passport,oidc-provider-plugin-wildcard-redirect-uri}' --stream",
@@ -192,38 +192,10 @@
     "ghpages": [
       {
         "dir": "./docs/.vuepress/dist",
-        "url": "https://github.com/tsedio/tsed",
+        "url": "https://github.com/tsedio/v7.tsed.dev",
         "branch": "gh-pages",
-        "cname": "tsed.io",
-        "if": "production"
-      },
-      {
-        "dir": "./docs-references/.vuepress/dist",
-        "url": "https://github.com/tsedio/api-docs.tsed.io.git",
-        "branch": "main",
-        "cname": "api-docs.tsed.io",
-        "if": "production"
-      },
-      {
-        "dir": "./docs/.vuepress/dist",
-        "url": "https://github.com/tsedio/rc.tsed.dev.git",
-        "branch": "gh-pages",
-        "cname": "rc.tsed.dev",
-        "if": "rc"
-      },
-      {
-        "dir": "./docs/.vitepress/dist",
-        "url": "https://github.com/tsedio/beta.tsed.dev.git",
-        "branch": "main",
-        "cname": "beta.tsed.dev",
-        "if": "beta"
-      },
-      {
-        "dir": "./docs/.vitepress/dist",
-        "url": "https://github.com/tsedio/alpha.tsed.dev.git",
-        "branch": "main",
-        "cname": "alpha.tsed.dev",
-        "if": "alpha"
+        "cname": "v7.tsed.dev",
+        "if": "v7"
       }
     ]
   },
