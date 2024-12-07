@@ -71,6 +71,7 @@ export * from "./decorators/common/hidden.js";
 export * from "./decorators/common/ignore.js";
 export * from "./decorators/common/integer.js";
 export * from "./decorators/common/jsonEntityFn.js";
+export * from "./decorators/common/labelledAs.js";
 export * from "./decorators/common/maximum.js";
 export * from "./decorators/common/maxLength.js";
 export * from "./decorators/common/minimum.js";
